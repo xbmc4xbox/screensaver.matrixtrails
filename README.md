@@ -9,4 +9,4 @@ This is a [XBMC](https://xbmc.tv) screensaver addon.
 ## Build instructions
 
 1. Install Visual Studio .NET 2003 and XDK
-2. Open CMD and run: `.\build.bat`
+2. Open CMD and run: `.\build.bat <path/to/xodi/repository>`

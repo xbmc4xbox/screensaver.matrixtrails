@@ -7,15 +7,12 @@ Global
 	GlobalSection(SolutionConfiguration) = preSolution
 		Debug = Debug
 		Release = Release
-		Test = Test
 	EndGlobalSection
 	GlobalSection(ProjectConfiguration) = postSolution
 		{DD54E288-DEC9-41D3-A1CB-A05645CD0787}.Debug.ActiveCfg = Debug|Win32
 		{DD54E288-DEC9-41D3-A1CB-A05645CD0787}.Debug.Build.0 = Debug|Win32
 		{DD54E288-DEC9-41D3-A1CB-A05645CD0787}.Release.ActiveCfg = Release|Win32
 		{DD54E288-DEC9-41D3-A1CB-A05645CD0787}.Release.Build.0 = Release|Win32
-		{DD54E288-DEC9-41D3-A1CB-A05645CD0787}.Test.ActiveCfg = Test|Win32
-		{DD54E288-DEC9-41D3-A1CB-A05645CD0787}.Test.Build.0 = Test|Win32
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 	EndGlobalSection

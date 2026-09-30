@@ -19,11 +19,12 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="$(XDK)\xbox\include"
-				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;_XBOX"
+				EnableIntrinsicFunctions="TRUE"
+				AdditionalIncludeDirectories="&quot;$(XDK)\xbox\include&quot;;./;./include"
+				PreprocessorDefinitions="WIN32;TARGET_WINDOWS;_XBOX"
 				MinimalRebuild="FALSE"
 				BasicRuntimeChecks="0"
-				RuntimeLibrary="1"
+				RuntimeLibrary="0"
 				BufferSecurityCheck="FALSE"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
@@ -72,9 +73,9 @@
 				Optimization="2"
 				FavorSizeOrSpeed="1"
 				OptimizeForProcessor="2"
-				AdditionalIncludeDirectories="$(XDK)\xbox\include"
-				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;_XBOX"
-				RuntimeLibrary="2"
+				AdditionalIncludeDirectories="&quot;$(XDK)\xbox\include&quot;;./;./include"
+				PreprocessorDefinitions="WIN32;NDEBUG;TARGET_WINDOWS;_XBOX"
+				RuntimeLibrary="0"
 				BufferSecurityCheck="FALSE"
 				EnableEnhancedInstructionSet="1"
 				UsePrecompiledHeader="0"
@@ -114,58 +115,6 @@
 			<Tool
 				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
 		</Configuration>
-		<Configuration
-			Name="Test|Win32"
-			OutputDirectory="$(ConfigurationName)"
-			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="2"
-			CharacterSet="2">
-			<Tool
-				Name="VCCLCompilerTool"
-				Optimization="0"
-				OptimizeForProcessor="2"
-				PreprocessorDefinitions="_TEST;WIN32;_DEBUG;_WINDOWS;_USRDLL;SPECTRUM_EXPORTS"
-				MinimalRebuild="TRUE"
-				BasicRuntimeChecks="3"
-				RuntimeLibrary="1"
-				EnableEnhancedInstructionSet="1"
-				UsePrecompiledHeader="0"
-				WarningLevel="3"
-				Detect64BitPortabilityProblems="TRUE"
-				DebugInformationFormat="3"/>
-			<Tool
-				Name="VCCustomBuildTool"/>
-			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/MatrixTrails.xbs"
-				LinkIncremental="2"
-				IgnoreDefaultLibraryNames="libci.lib"
-				GenerateDebugInformation="TRUE"
-				ProgramDatabaseFile="$(OutDir)/MatrixTrails.pdb"
-				SubSystem="2"
-				ImportLibrary="$(OutDir)/spectrum.lib"
-				TargetMachine="1"/>
-			<Tool
-				Name="VCMIDLTool"/>
-			<Tool
-				Name="VCPostBuildEventTool"/>
-			<Tool
-				Name="VCPreBuildEventTool"/>
-			<Tool
-				Name="VCPreLinkEventTool"/>
-			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCWebDeploymentTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
-		</Configuration>
 	</Configurations>
 	<References>
 	</References>
@@ -182,9 +131,6 @@
 			</File>
 			<File
 				RelativePath=".\matrixtrails.cpp">
-			</File>
-			<File
-				RelativePath=".\XmlDocument.cpp">
 			</File>
 		</Filter>
 		<Filter
@@ -205,12 +151,6 @@
 			</File>
 			<File
 				RelativePath=".\types.h">
-			</File>
-			<File
-				RelativePath=".\xbsBase.h">
-			</File>
-			<File
-				RelativePath=".\XmlDocument.h">
 			</File>
 		</Filter>
 	</Files>
